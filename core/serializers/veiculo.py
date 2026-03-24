@@ -1,9 +1,7 @@
 from rest_framework.serializers import ModelSerializer
+from core.models import Veiculo
 
-from core.models import Modelo
-
-
-class ModeloSerializer(ModelSerializer):
+class VeiculoSerializer(ModelSerializer):
     class Meta:
-        model = Modelo
+        model = Veiculo
         fields = '__all__'
